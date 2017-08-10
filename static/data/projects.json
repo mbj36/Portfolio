@@ -1,0 +1,28 @@
+[  {
+    "img"    : "img/chess.jpg",
+    "heading": "Players",
+    "year"   : "2016",
+    "description":"Developed a online three day event with two of the other developers where individual could buy or sell the shares",
+    "tech"   :["Flask", "MongoDB", "Bootstrap"],
+    "links": [
+      {
+        "iconClass": "fa-github",
+        "url": "https://github.com/Pulkit07/Players"
+      }
+    ],
+    "timeline" : " "
+  },
+  {
+    "img"    : "img/mifos.jpg",
+    "heading": "Browser Based Offline Access",
+    "year"   : "2016",
+    "description":"Developed an offline community app as a GSoC project  with PWA technologies",
+    "tech"   :["Angular JS", "Service workers", "IndexedDB","Git"],
+    "links": [
+      {
+        "iconClass": "fa-github",
+        "url": "https://github.com/mbj36/community-app/tree/offline"
+      }
+    ],
+    "timeline" : "inverted"
+  }]

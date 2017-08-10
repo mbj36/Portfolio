@@ -1,0 +1,53 @@
+{
+  "name": "Mohit Kumar Bajoria",
+  "links": [
+    {
+      "icon": "fa-github-square",
+      "url": "https://github.com/mbj36"
+    },
+    {
+      "icon": "fa-facebook-square",
+      "url": "https://www.facebook.com/mohitbajoria36"
+    },
+    {
+      "icon": "fa-twitter-square",
+      "url": "https://www.twitter.com/mbj36"
+    },
+    {
+      "icon": "fa-linkedin-square",
+      "url": "https://www.linkedin.com/in/mbj36"
+    }
+  ],
+    "skillsets": [
+    {
+      "type": "Platforms",
+      "icon": "fa-rocket",
+      "skills": ["Linux", "Windows"]
+    },
+    {
+      "type": "Languages",
+      "icon": "fa-language",
+      "skills": ["Javascript"]
+    },
+    {
+      "type": "Web and App",
+      "icon": "fa-firefox",
+      "skills": ["HTML","CSS3","Jquery", "Ionic 2", "Material", "PWAapps"]
+    },
+    {
+        "type":"Frameworks",
+        "icon":"fa-clone",
+        "skills":["AngularJS","Bootstrap","Flask","EmberJS"]
+    },
+    {
+      "type": "Databases",
+      "icon": "fa-database",
+      "skills": ["MySQL"]
+    },
+    {
+      "type": "Tools",
+      "icon": "fa-cogs",
+      "skills": ["Git","Vim", "Atom"]
+    }
+]
+}
