@@ -25,7 +25,7 @@
       <br />
       <v-card class="indigo darken-1">
         <v-card-text class="text-xs-center white--text">
-          Resume
+          Download Resume
         </v-card-text>
       </v-card>
       <br />
@@ -34,9 +34,9 @@
         <v-btn secondary>
           <v-icon>fa {{skill.icon}}</v-icon>&nbsp; {{skill.type}}
         </v-btn>
-        <v-btn secondary v-for="skill in abouts.skillsets.skills" :key="skill.type">{{skill}}</v-btn>
+        <v-btn primary v-for="skill in skill.skills" :key="+skill">{{skill}}</v-btn>
       </div>
-
+      <br />
       </v-card>
     </v-flex>
   </v-layout>

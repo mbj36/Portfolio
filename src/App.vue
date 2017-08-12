@@ -1,12 +1,11 @@
 <style>
 
-
 </style>
 
 <template>
 
 <div id="app">
-    <v-toolbar fixed>
+    <v-toolbar dense fixed>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-tabs dark fixed centered>
         <v-tabs-bar slot="activators" class="white">
@@ -24,7 +23,11 @@
    <main>
        <router-view></router-view>
    </main>
-
+   <br />
+     <v-footer fixed class="pa-3 primary">
+       <v-spacer></v-spacer>
+       <div style="color:white;">© {{ new Date().getFullYear() }}</div>
+     </v-footer>
 </div>
 
 

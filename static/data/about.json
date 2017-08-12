@@ -32,7 +32,7 @@
     {
       "type": "Web and App",
       "icon": "fa-firefox",
-      "skills": ["HTML","CSS3","Jquery", "Ionic 2", "Material", "PWAapps"]
+      "skills": ["HTML","CSS3", "Ionic 2", "PWA-apps"]
     },
     {
         "type":"Frameworks",
