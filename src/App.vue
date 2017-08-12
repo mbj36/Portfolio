@@ -4,13 +4,33 @@
 
 <template>
 
-<div id="app">
+<div id="app" standalone>
     <v-toolbar dense fixed>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
+
+      <v-navigation-drawer
+     class="grey lighten-4"
+     persistent
+     clipped
+     height="100%"
+     hide-overlay
+     enable-resize-watcher
+     v-model="drawer"
+   >
+     <v-list dense>
+       <v-list-tile v-for="route in routesNames" :key="route.text" :to="route.url">
+         <v-list-tile-content>
+           <v-list-tile-title>
+             {{ route.text }}
+           </v-list-tile-title>
+         </v-list-tile-content>
+       </v-list-tile>
+     </v-list>
+   </v-navigation-drawer>
+       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-tabs dark fixed centered>
         <v-tabs-bar slot="activators" class="white">
           <v-tabs-slider class="indigo"></v-tabs-slider>
-          <v-tabs-item v-for="route in routesNames" :key="+route" :to="route.url" :router="true">{{route.text}}</v-tabs-item>
+          <v-tabs-item class="hidden-sm-and-down" v-for="route in routesNames" :key="route.text" :to="route.url" :router="true">{{route.text}}</v-tabs-item>
         </v-tabs-bar>
       </v-tabs>
      <v-btn icon>
@@ -40,6 +60,7 @@ export default {
     name: 'app',
     data(){
       return{
+        drawer:'true',
     routesNames:[{
     class: "fa fa-user",
     text: "About",
