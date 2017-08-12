@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Project from'@/components/Project';
 import Blog from '@/components/Blog';
 import '../../node_modules/vuetify/dist/vuetify.min.css';
+
 Vue.use(Router);
 Vue.use(VueResource);
 Vue.use(Vuetify);

@@ -2,12 +2,12 @@
   "name": "Mohit Kumar Bajoria",
   "links": [
     {
-      "icon": "fa-github-square",
+      "icon": "fa-github",
       "url": "https://github.com/mbj36"
     },
     {
       "icon": "fa-facebook-square",
-      "url": "https://www.facebook.com/mohitbajoria36"
+      "url": "https://www.facebook.com/mbj36"
     },
     {
       "icon": "fa-twitter-square",
@@ -37,12 +37,12 @@
     {
         "type":"Frameworks",
         "icon":"fa-clone",
-        "skills":["AngularJS","Bootstrap","Flask","EmberJS"]
+        "skills":["AngularJS","VueJs","EmberJS"]
     },
     {
       "type": "Databases",
       "icon": "fa-database",
-      "skills": ["MySQL"]
+      "skills": ["MySQL","MongoDB"]
     },
     {
       "type": "Tools",
