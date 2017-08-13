@@ -75,7 +75,7 @@ export default{
   padding: 1%;
 }
 a{
-  color: inherit;
+  color: inherit !important;
 }
 a, u{
   text-decoration: none;
