@@ -4,6 +4,7 @@ import VueResource from 'vue-resource';
 import Vuetify from 'vuetify';
 import Hello from '@/components/Hello';
 import About from '@/components/About';
+import Experience from '@/components/Experience';
 import Project from'@/components/Project';
 import Blog from '@/components/Blog';
 import '../../node_modules/vuetify/dist/vuetify.min.css';
@@ -34,6 +35,11 @@ export default new Router({
       path:'/blog',
       name:'Blog',
       component:Blog
+    },
+    {
+      path:'/experience',
+      name:'Experience',
+      component: Experience
     }
   ],
 });

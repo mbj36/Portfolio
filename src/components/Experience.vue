@@ -5,15 +5,19 @@
      <v-container fluid style="min-height: 0;" grid-list-lg>
        <v-layout row wrap>
          <v-flex xs12 sm6 offset-sm3>
-           <v-card class="grey lighten-4 ma-3" v-for="info in blogs" :key="info.title">
+           <v-card class="grey lighten-4 ma-3" v-for="info in exps" :key="info.title">
              <v-card-title primary-title>
-               <div class="headline">{{info.title}}</div>
+               <img :src="info.img" height="100px" />
+               <div class="headline">&nbsp; {{info.heading}}</div>
+               <div class="text-xs-center">
+               <v-btn round primary dark>{{info.duration}}</v-btn>
+             </div>
+             <div class="text-xs-center">
+               <v-btn dark secondary round>{{info.description}}</v-btn>
+             </div>
              </v-card-title>
              <v-card-actions>
-               <v-btn :href="info.link" target="_blank" class=
-               "secondary"> Read More</v-btn>
-               <v-chip class="primary white--text" close>GSOC</v-chip>
-               <v-chip class="primary white--text" close>Web</v-chip>
+               <v-chip close v-for="tag in info.tags" :key="tag.tags">{{tag}}</v-chip>
              </v-card-actions>
            </v-card>
          </v-flex>
@@ -25,17 +29,17 @@
 
 <script>
 export default{
-  name:'Blog',
+  name:'Experience',
   data(){
     return{
-    blogs:'',
+    exps:'',
     ready:0
   }
   },
   methods: {
-    getBlogData() {
-      this.$http.get('../../static/data/blogs.json').then(response =>{
-        this.blogs =  response.data;
+    getExpData() {
+      this.$http.get('../../static/data/work.json').then(response =>{
+        this.exps =  response.data;
         this.ready =1;
         console.log(response);
       })
@@ -43,7 +47,7 @@ export default{
   },
   beforeMount() {
     //do something before mounting vue instance
-    this.getBlogData();
+    this.getExpData();
   }
 };
 </script>
