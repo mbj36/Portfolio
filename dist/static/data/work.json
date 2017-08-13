@@ -1,0 +1,50 @@
+[
+  {
+    "img"    : "../../static/gsoc.jpg",
+    "heading": "Google Summer of Code'17",
+    "year"   : "2016",
+    "description":"Mifos Initiative",
+    "duration":"May 2017 - Present",
+    "tags":["GSOC","Open Source","PWA"]
+  },
+  {
+    "img"    : "../../static/mifos.jpg",
+    "heading": "Community Web App Maintainer",
+    "year"   : "2016",
+    "description":"Mifos Initiative",
+    "duration":"Feb 2017 - Present",
+    "tags":["Maintainer","Open Source","MIFOS"]
+  },
+  {
+    "img"    : "../../static/gci.png",
+    "heading": "Google Code-In, 2016",
+    "year"   : "2016",
+    "description":"Mentor, Google Code-In",
+    "duration":"November 2016 - January 2017",
+    "tags":["GCI", "Open-source"]
+  },
+  {
+    "img"    : "../../static/gsoc.jpg",
+    "heading": "Google Summer of Code'16",
+    "year"   : "2016",
+    "description":"Mifos Initiative",
+    "duration":"April 2016 - August 2016",
+    "tags":["GSOC","Open Source"]
+  },
+  {
+    "img"    : "../../static/cout.jpg",
+    "heading": "CoutLoot, Mumbai",
+    "year"   : "2016",
+    "description":"Front End Intern, CoutLoot",
+    "duration":"Feb 2016 - March 2016",
+    "tags":["Tech","Front-end"]
+  },
+  {
+    "img"    : "../../static/smvdu.png",
+    "heading": "Co-ordinator, Code-Club SMVDU",
+    "year"   : "2015",
+    "description":"Tutor, Code-Club SMVDU",
+    "duration":"Aug 2015 - Present",
+    "tags":["Manager","Tutor","Guide"]
+  }
+]
