@@ -10,24 +10,24 @@
 </template>
 
 <script>
-  export default{
-    name:'Project',
-    data(){
-      return{
-        projects:''
-      }
-    },
-    methods: {
-      getProjectData() {
-        this.$http.get('../../static/data/projects.json').then(response => {
-          this.projects = response.data;
-          console.log(response);
-        });
-        }
-      },
-      beforeMount() {
-        //do something before mounting vue instance
-        this.getProjectData()
-      }
-    };
+export default {
+  name: 'Project',
+  data() {
+    return {
+      projects: ''
+    }
+  },
+  methods: {
+    getProjectData() {
+      this.$http.get('../../static/data/projects.json').then(response => {
+        this.projects = response.data;
+        console.log(response);
+      });
+    }
+  },
+  beforeMount() {
+    //do something before mounting vue instance
+    this.getProjectData()
+  }
+};
 </script>

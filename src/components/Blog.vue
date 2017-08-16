@@ -11,7 +11,7 @@
              </v-card-title>
              <v-card-actions>
                <v-btn :href="info.link" target="_blank" class=
-               "secondary"> Read More</v-btn>
+               "secondary white--text"> Read More</v-btn>
                <v-chip class="primary white--text" close>GSOC</v-chip>
                <v-chip class="primary white--text" close>Web</v-chip>
              </v-card-actions>

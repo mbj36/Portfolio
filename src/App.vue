@@ -11,8 +11,8 @@
      class="grey lighten-4"
      persistent
      clipped
-     height="100%"
      hide-overlay
+     height="100%"
      enable-resize-watcher
      v-model="drawer"
    >
@@ -27,7 +27,7 @@
      </v-list>
    </v-navigation-drawer>
        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-tabs dark fixed centered>
+      <v-tabs fixed centered>
         <v-tabs-bar slot="activators" class="white">
           <v-tabs-slider class="indigo"></v-tabs-slider>
           <v-tabs-item class="hidden-sm-and-down" v-for="route in routesNames" :key="route.text" :to="route.url" :router="true">{{route.text}}</v-tabs-item>
